@@ -32,3 +32,9 @@ class GildedRose(object):
                 else:
                     if item.quality < 50:
                         item.quality = item.quality + 1
+
+    def is_quality_increasing(self, item_name):
+        if item_name == "Aged Brie" or "Backstage passes to a TAFKAL80ETC concert":
+            return True
+        
+        return False
